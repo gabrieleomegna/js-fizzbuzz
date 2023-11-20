@@ -10,12 +10,15 @@ for (let i = 1; i <= 100; i++) {
     cardElement.className = 'card';
     wrapperElement.appendChild (cardElement);
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log ('FizzBuzz');
+        cardElement.innerHTML = 'FizzBuzz';
+        cardElement.className += ' bg-red'
     } else if (i % 5 === 0) {
-        console.log ('Buzz');
+        cardElement.innerHTML = 'Buzz';
+        cardElement.className += ' bg-yellow'
     } else if (i % 3 === 0) {
-        console.log ('Fizz');
+        cardElement.innerHTML = 'Fizz';
+        cardElement.className += ' bg-green'
     } else {
-        console.log(i);
+        cardElement.innerHTML = i;
     } 
 }
