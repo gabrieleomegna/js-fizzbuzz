@@ -3,7 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container {
+body {
+    background-color: rgb(8, 59, 76);
+}
+div.container {
     padding: 3rem;
     text-align: center;
+}
+div.container h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    width: calc(100% / 7);
+    text-align: center;
+    background-color: rgb(19, 137, 178);
+    border: 20px solid rgb(8, 59, 76);
+}
+div.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 6rem;
 }
